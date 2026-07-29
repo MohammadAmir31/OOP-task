@@ -5,7 +5,7 @@ class car{
     private float direction;
     private float fuelTankCapacity;
         // parametrize constructor
-        public Car(boolean key, float speed, float fuelTankCapacity){
+        public car(boolean key, float speed, float fuelTankCapacity){
             this.key= key;
             this.fuelTankCapacity = fuelTankCapacity;
             this.speed = speed;
@@ -13,7 +13,7 @@ class car{
             this.direction = direction;
         }
         // null constructor
-        public Car(){
+        public car(){
             this.key= true;
             this.fuelTankCapacity = 1;
             this.speed = 60;

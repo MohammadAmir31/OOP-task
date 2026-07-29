@@ -1,7 +1,6 @@
-import java.util.*;
 public class carMain{
     public static void main(String[] args) {
-        Car tesla= new Car(false, 0, 18);
+        car tesla= new car(false, 0, 18);
         tesla.on_off(false);
         tesla.drive();
         tesla.direction("r");
