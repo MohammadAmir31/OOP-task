@@ -6,6 +6,7 @@ class triangle {
     private double sideC;
     private double p;
     private boolean isright;
+    private int count;
 
     public triangle() {
         this.sideA = 1.0;
@@ -18,12 +19,16 @@ class triangle {
         this.sideA = x;
         this.sideB = x;
         this.sideC = x;
+        this.count++;
     }
     // isosceles triangle
 
     public void isosceles(double x, double y) {
         this.sideA = x;
         this.sideB = x;
+        this.sideC = y;
+        this.count++;
+
     }
     //sides w.r.t x y z
 
@@ -31,6 +36,8 @@ class triangle {
         this.sideA = x;
         this.sideB = y;
         this.sideC = z;
+        this.count++;
+
     }
     // perimeter
 
@@ -38,7 +45,9 @@ class triangle {
         this.sideA = x;
         this.sideB = y;
         this.sideC = z;
+        this.count++;
         return this.p = (this.sideA + this.sideB + this.sideC) / 2;
+
     }
     // isRightAngled
 
@@ -46,14 +55,25 @@ class triangle {
         this.sideA = a;
         this.sideB = b;
         this.sideC = c;
-        if(Math.pow(this.sideA , 2) + Math.pow(this.sideB , 2) == Math.pow(this.sideC , 2)){
+        this.count++;
+        if (Math.pow(this.sideA, 2) + Math.pow(this.sideB, 2) == Math.pow(this.sideC, 2)) {
             return isright = true;
-        }
-        else{
+        } else {
             return isright = false;
         }
 
     }
+
+    //object count
+    int objCount() {
+        return this.count;
+    }
+
+    // to string
+    // @Override
+  public String toString() {
+    return String.format("side A ==> %s side B ==> %s side C ==> %s",sideA, sideB, sideC);
+}
     // display
 
     public void display() {
@@ -62,7 +82,7 @@ class triangle {
         System.out.println("side C ==> " + sideC);
         System.out.println("perimeter ==> " + p);
         System.out.println("isRightAngle ==> " + isright);
-
+        System.out.println("object count ==> " + count);
 
     }
 }

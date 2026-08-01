@@ -1,5 +1,5 @@
 import java.util.*;
-public class calMain {
+public class Main {
     public static void main(String[] args){
         calculator casio = new calculator ();
         casio.solve(15,3,'/');
