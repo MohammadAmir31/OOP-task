@@ -16,14 +16,16 @@ public class Main {
         // tesla.drive();6
         // tesla.direction("r");
         // tesla.display();
+        complexNumber num1 = new complexNumber(3,5);
+        num1.modulus();
+        num1.display();
+        //     Point p1 = new Point(24,3);
+        // Point p2 = new Point(8,7);
+        // Point p3 = new Point(12,9);
 
-            Point p1 = new Point(24,3);
-        Point p2 = new Point(8,7);
-        Point p3 = new Point(12,9);
-
-        trianglePoint w2 = new trianglePoint();
-        w2.get_p1();
-        w2.display();
+        // trianglePoint w2 = new trianglePoint();
+        // w2.get_p1();
+        // w2.display();
         // w2.isIsosceles();
         // w2.isEquilateral();
 
